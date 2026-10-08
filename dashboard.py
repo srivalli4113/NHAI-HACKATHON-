@@ -1,0 +1,15 @@
+from fastapi import APIRouter, Depends
+from sqlalchemy.orm import Session
+
+from app.db.session import get_db
+from app.schemas.contracts import DashboardMetrics
+from app.security.auth import get_current_user
+from app.services.dashboard_service import dashboard_metrics
+
+router = APIRouter(prefix="/dashboard", tags=["dashboard"])
+
+
+@router.get("/metrics", response_model=DashboardMetrics)
+def metrics(db: Session = Depends(get_db), _: str = Depends(get_current_user)) -> dict:
+    return dashboard_metrics(db)
+
