@@ -15,23 +15,20 @@ Cloudflare Tunnel or the developer laptop running.
 
 ## 1. Put the Project on GitHub
 
-The local Git repository and its first commit are already prepared. On GitHub,
-create an empty repository named `Hackathon_NHAI`. Do not add a README or
-.gitignore on GitHub because this project already has both. Then run:
+The local Git repository and its first commit are already prepared. The GitHub
+repository for this project is `srivalli4113/NHAI-HACKATHON-`. Then run:
 
 ```bash
 cd /Users/srivallikarnataka/Desktop/Hackathon_NHAI
 git branch -M main
-git remote add origin https://github.com/YOUR-USERNAME/Hackathon_NHAI.git
+git remote set-url origin https://github.com/srivalli4113/NHAI-HACKATHON-.git
 git push -u origin main
 ```
-
-Replace `YOUR-USERNAME` with the GitHub username visible on your GitHub profile.
 
 ## 2. Create the Free Web Service
 
 1. Sign in to Render with the same GitHub account.
-2. Select **New +**, then **Web Service**, and choose `Hackathon_NHAI`.
+2. Select **New +**, then **Web Service**, and choose `NHAI-HACKATHON-`.
 3. Give it a unique name such as `nhai-edge-ai-demo-srivalli`.
 4. Select the **Docker** runtime and the **Free** instance type.
 5. Set **Dockerfile Path** to `docker/Dockerfile.render`.

@@ -123,6 +123,8 @@ def require_admin(identity: AuthIdentity = Depends(get_current_identity)) -> Aut
 
 def verify_admin_credentials(username: str, password: str) -> bool:
     settings = get_settings()
+    if not settings.admin_password:
+        return False
     stored = hash_password(settings.admin_password, "offline-admin-salt")
     return hmac.compare_digest(username.casefold(), settings.admin_username.casefold()) and verify_password(password, stored)
 
