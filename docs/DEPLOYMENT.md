@@ -4,6 +4,9 @@ For a public reviewer link that remains available for a short demo period, follo
 [RENDER_DEPLOYMENT.md](RENDER_DEPLOYMENT.md). It is separate from the offline
 mobile deployment below and does not replace the offline-first prototype.
 
+For a short-lived public cloud link without keeping the developer laptop online,
+see [RAILWAY_DEPLOYMENT.md](RAILWAY_DEPLOYMENT.md).
+
 ## Offline Packaging
 
 ### Mobile app
