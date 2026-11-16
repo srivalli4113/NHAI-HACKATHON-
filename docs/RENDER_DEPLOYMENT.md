@@ -22,18 +22,23 @@ repository for this project is `srivalli4113/NHAI-HACKATHON-`. Then run:
 cd /Users/srivallikarnataka/Desktop/Hackathon_NHAI
 git branch -M main
 git remote set-url origin https://github.com/srivalli4113/NHAI-HACKATHON-.git
-git push -u origin main
+git push -u origin HEAD:render-demo
 ```
+
+The existing `main` branch is an older upload. The clean deployment source is on
+the `render-demo` branch so it can be reviewed or deployed without overwriting the
+older files.
 
 ## 2. Create the Free Web Service
 
 1. Sign in to Render with the same GitHub account.
 2. Select **New +**, then **Web Service**, and choose `NHAI-HACKATHON-`.
-3. Give it a unique name such as `nhai-edge-ai-demo-srivalli`.
-4. Select the **Docker** runtime and the **Free** instance type.
-5. Set **Dockerfile Path** to `docker/Dockerfile.render`.
-6. Under **Advanced**, set **Health Check Path** to `/health`.
-7. Add these environment variables before clicking **Create Web Service**:
+3. Select the `render-demo` branch.
+4. Give it a unique name such as `nhai-edge-ai-demo-srivalli`.
+5. Select the **Docker** runtime and the **Free** instance type.
+6. Set **Dockerfile Path** to `docker/Dockerfile.render`.
+7. Under **Advanced**, set **Health Check Path** to `/health`.
+8. Add these environment variables before clicking **Create Web Service**:
 
 | Key | Value |
 | --- | --- |
