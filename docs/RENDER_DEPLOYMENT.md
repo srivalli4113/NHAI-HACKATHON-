@@ -15,25 +15,18 @@ Cloudflare Tunnel or the developer laptop running.
 
 ## 1. Put the Project on GitHub
 
-Run these commands once in a new terminal:
+The local Git repository and its first commit are already prepared. On GitHub,
+create an empty repository named `Hackathon_NHAI`. Do not add a README or
+.gitignore on GitHub because this project already has both. Then run:
 
 ```bash
 cd /Users/srivallikarnataka/Desktop/Hackathon_NHAI
-git init
-git add .
-git commit -m "Prepare NHAI Edge AI public demo"
-```
-
-On GitHub, create an empty repository named `Hackathon_NHAI`. Do not add a README
-or .gitignore on GitHub because this project already has one. GitHub then shows a
-"push an existing repository" command. Copy and run the two commands it provides,
-which are similar to:
-
-```bash
 git branch -M main
 git remote add origin https://github.com/YOUR-USERNAME/Hackathon_NHAI.git
 git push -u origin main
 ```
+
+Replace `YOUR-USERNAME` with the GitHub username visible on your GitHub profile.
 
 ## 2. Create the Free Web Service
 
