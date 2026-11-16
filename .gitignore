@@ -1,0 +1,22 @@
+# Local Python environments and generated Python files
+.venv/
+backend/.venv/
+**/__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Local data contains demonstration records and biometric test artifacts.
+backend/offline_face.db
+offline_face.db
+backend/storage/
+storage/
+
+# JavaScript build artifacts
+frontend/node_modules/
+frontend/dist/
+mobile/node_modules/
+
+# Local configuration and OS files
+.env
+backend/.env
+.DS_Store

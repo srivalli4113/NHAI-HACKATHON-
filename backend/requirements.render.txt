@@ -1,0 +1,13 @@
+# Small public-demo runtime. Optional ONNX and MediaPipe imports in the app
+# gracefully use the existing OpenCV fallback when no packaged model is present.
+fastapi==0.115.6
+uvicorn[standard]==0.32.1
+SQLAlchemy==2.0.36
+pydantic==2.10.4
+pydantic-settings==2.7.0
+python-multipart==0.0.20
+opencv-python-headless==4.10.0.84
+numpy==1.26.4
+cryptography==44.0.0
+openpyxl==3.1.5
+httpx==0.28.1
