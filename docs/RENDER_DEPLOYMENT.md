@@ -41,7 +41,7 @@ Replace `YOUR-USERNAME` with the GitHub username visible on your GitHub profile.
 | Key | Value |
 | --- | --- |
 | `ADMIN_USERNAME` | `admin` |
-| `ADMIN_PASSWORD` | `NHAI2026` |
+| `ADMIN_PASSWORD` | An easy demo password you choose privately; do not put it in GitHub |
 | `APP_SECRET_KEY` | A new random secret, for example the output of `openssl rand -hex 32` |
 
 The Docker image already sets its temporary database, storage, and model paths.
